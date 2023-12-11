@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hamza Sayed-Ali</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+	
+    <script>
+        setInterval(() => {
+            d = new Date(); //object of date()
+            hr = d.getHours();
+            min = d.getMinutes();
+            sec = d.getSeconds();
+            hr_rotation = 30 * hr + min / 2; //converting current time
+            min_rotation = 6 * min;
+            sec_rotation = 6 * sec;
+        
+            hour.style.transform = `rotate(${hr_rotation}deg)`;
+            minute.style.transform = `rotate(${min_rotation}deg)`;
+            second.style.transform = `rotate(${sec_rotation}deg)`;
+        }, 1000);
+    </script>
+
+
+</head>
+<body>
+<div class="nav">
+<div class="nav-link"><a href="index.html">home</a></div>
+<div class="nav-link"><a href="about.html">about</a></div>
+<div class="nav-link"><a href="blog.html">blog</a></div>
+<div class="nav-link"><a href="code.html">code</a></div>
+<div class="nav-link"><a href="music.html">music</a></div>
+</div>
+
+
+
+<img class="right-side" src="rightside2.png"/>
+<div class="left-side">
+    <img src="leftside2.png"/>
+    <h1 class="name-title">HAMZA SAYED-ALI</h1>
+    <div class="sign-links">
+        <a href="about.html"><h2>about</h2></a>
+        <a href="blog.html"><h2>blog</h2></a>
+        <a href="code.html"><h2>code</h2></a>
+        <a href="music.html"><h2>music</h2></a>
+        
+    </div>
+
+</div>
+
+<div id="clockContainer">
+    <div id="hour"></div>
+    <div id="minute"></div>
+    <div id="second"></div>
+</div>
+
+<div id="background-wrap">
+    <div class="x1">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x2">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x3">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x4">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x5">
+        <div class="cloud"></div>
+    </div>
+</div>
+
+
+</body>
