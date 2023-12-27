@@ -1,0 +1,188 @@
+body {
+  background-color: #f4f4f4;
+}
+.App {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.social-link img {
+  height: 16px;
+}
+
+.social-link a {
+}
+
+p {
+  font-size: 24px;
+  margin-top: 8px;
+}
+h1,
+h2 {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+h1 {
+  font-size: 48px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  margin-left: 48px;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.profile-img {
+  height: 160px;
+  width: 160px;
+  border-radius: 4px;
+  margin-right: 24px;
+}
+
+.projects {
+  max-width: 1200px;
+  position: relative;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-details p {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.project-img {
+  height: 120px;
+  margin-right: 16px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+.dot {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -66px;
+  top: 8px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border-color: #c5c2c2;
+  border-style: solid;
+  border-width: 1px;
+}
+.year {
+  position: absolute;
+
+  left: -150px;
+  top: 8px;
+
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.dot-last {
+  position: absolute;
+  background-color: #e0f3fe;
+  border: solid #c5c2c2 1px;
+  height: 100%;
+  width: 8px;
+  top: 116px;
+  left: 102px;
+  z-index: -1;
+}
+
+.project-card {
+  position: relative;
+  margin-left: 156px;
+}
+
+@media only screen and (max-width: 640px) {
+  .header {
+    flex-direction: column;
+  }
+  .intro {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .social-links {
+    flex-direction: row;
+  }
+  .profile-img {
+    margin-right: 0px;
+  }
+  .App {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .project-details {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body p {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .intro {
+    flex-direction: column;
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .App {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .project-details {
+    flex-direction: column;
+  }
+
+  .project-card {
+    margin-left: 4px;
+  }
+
+  .dot-last {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  .dot-last {
+    top: 170px;
+  }
+}
