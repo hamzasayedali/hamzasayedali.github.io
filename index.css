@@ -1,5 +1,12 @@
 body {
   background-color: #f4f4f4;
+
+  margin: 0;
+  font-family: -apple-system, "DM Sans", BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .App {
   padding-left: 60px;
