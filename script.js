@@ -14,7 +14,7 @@ function setActiveButton(selectedButton) {
 }
 
 function showOnlyOneDiv(divIdToShow) {
-    var allDivs = ['div1', 'div2', 'div3'];
+    var allDivs = ['div1', 'div2', 'div3', 'div4'];
 
     allDivs.forEach(function(divId) {
         var div = document.getElementById(divId);
