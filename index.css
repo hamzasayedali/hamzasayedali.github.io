@@ -67,6 +67,24 @@ h1 {
   font-size: 48px;
 }
 
+.header-subsection{
+  margin-left: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+.header-tabs-div{
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+  align-items: left;
+}
+.header-tabs-div p{
+  margin-right: 8px;
+  margin-top: 16px;
+}
+
 .intro {
   display: flex;
   flex-direction: row;
@@ -190,9 +208,31 @@ button.active {
   margin: 2px;
 }
 
+.title-link{ 
+  color: black;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 640px) {
   .header {
     flex-direction: column;
+  }
+  .header h1{
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .header p{
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0;
+    margin-block-end: 8px;
+  }
+  .header-subsection{
+    flex-direction: column;
+    margin: 0;
+  }
+  .header-tabs-div{
+    justify-content: space-around;
   }
   .intro {
     flex-direction: column;
@@ -200,6 +240,7 @@ button.active {
   }
   .social-links {
     flex-direction: row;
+    justify-content: space-around;
   }
   .profile-img {
     margin-right: 0px;
