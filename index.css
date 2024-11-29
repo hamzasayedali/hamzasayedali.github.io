@@ -67,6 +67,11 @@ h1 {
   font-size: 48px;
 }
 
+h3 {
+  margin-top: 0px;
+  margin-bottom:4px;
+}
+
 .header-subsection{
   margin-left: 24px;
   display: flex;
